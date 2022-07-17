@@ -1,0 +1,333 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+dl,
+dd {
+ margin: 0;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.orange{
+  background-color: orange;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+ list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+ scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+ text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+ max-width: 100%;
+ display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+ font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+ html:focus-within {
+  scroll-behavior: auto;
+ }
+
+ *,
+ *::before,
+ *::after {
+   animation-duration: 0.01ms !important;
+   animation-iteration-count: 1 !important;
+   transition-duration: 0.01ms !important;
+   scroll-behavior: auto !important;
+ }
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+
+}
+
+p{
+  margin-bottom: 20px;
+
+}
+p:after {
+    content:"\A";
+}
+
+
+/*  */
+.aside{
+  min-width: 25%;
+  min-height: 100%;
+  border-left: 1px solid rgba(230, 230, 230, 1);
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside_content{
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.aside_header{
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 20px;
+  font-size: 16px;
+  color: rgba(41, 41, 41, 1);
+  font-weight: 500;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.index_menu{
+  min-width: 5%;
+  min-height: 100%;
+  border-right: 1px solid rgba(230, 230, 230, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.main_content{
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100%;
+  min-width: 70%;
+  padding-top: 5%;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255 255 255);;
+
+  min-height: 100vh;
+}
+
+
+/*  */
+
+h1{
+  letter-spacing: 0px;
+  -webkit-line-clamp: 3;
+  max-height: 84px;
+  line-height: 28px;
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(41, 41, 41, 1);
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+p{
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(41, 41, 41, 1);
+  font-weight: 400;
+}
+
+.topic_header{
+  display: block;
+  letter-spacing: 0.077em;
+  line-height: 18px;
+  color: rgba(117, 117, 117, 1);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topic_header_container{
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topic_items_container{
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  overflow-x: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topic_items_container_instance{
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  overflow-x: auto;
+}
+
+.topic_items{
+  white-space: nowrap;
+  transition: background 300ms ease 0s;
+  padding: 8px 16px;
+  border-radius: 100px;
+  background-color: rgba(242, 242, 242, 1);
+  position: relative;
+  color: rgba(41, 41, 41, 1);
+  line-height: 20px;
+  font-size: 14px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.index_menu_logo{
+  min-height: 25%;
+}
+
+.svg{
+  fill: orange;
+}
+
+.index_menu_menu{
+  min-height: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 80 %;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.index_menu_footer{
+  min-height: 25%;
+}
+
+.article_list{
+}
+
+.article_container{
+
+}
+
+.article_list_instance{
+  padding-top: 5%;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+.article_instance_content{
+  width: 75%;
+}
+
+.article_instance_image{
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.article_title{
+  letter-spacing: 0px;
+  -webkit-line-clamp: 3;
+  max-height: 84px;
+  line-height: 28px;
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(41, 41, 41, 1);
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+
+.article_desc{
+  -webkit-line-clamp: 3;
+  max-height: 72px;
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  letter-spacing: 0;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  color: rgba(41, 41, 41, 1);
+  font-weight: 400;
+
+}
+
+.article_date{
+  color: rgba(117, 117, 117, 1);
+  line-height: 20px;
+  font-size: 14px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
